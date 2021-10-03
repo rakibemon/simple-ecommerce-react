@@ -1,0 +1,30 @@
+.product-card{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 3rem;
+    border-bottom: 1px solid lightgray;
+    margin-right: 16px;
+}
+.product-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+}
+.product-title{
+    color: blue;
+}
+.right-side-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.add-cart-btn{
+    padding: 5px 30px;
+    margin-right: 10px;
+}
+
+.orange{
+    color: orange;
+    font-size: large;
+}

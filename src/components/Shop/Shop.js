@@ -44,7 +44,6 @@ const Shop = () => {
             product.quantity = 1;
             newCart = [...cart,product]
         }
-        console.log(newCart);
         setCart(newCart)
         addToLocatStorage(product.key)
     };

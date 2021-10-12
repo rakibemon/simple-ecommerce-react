@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import useCart from '../../hooks/useCart';
 import useProducts from '../../hooks/useProducts';
-import { clearTheCart, removeFromLocalStorage } from '../../utilities/fakedb2';
+import { removeFromLocalStorage } from '../../utilities/fakedb2';
 import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
 
@@ -16,10 +16,10 @@ const OrderReview = () => {
     };
 
     const history = useHistory()
-    const handlePlaceOrder = () =>{
-        history.push('/placeorder');
-        setCart([]);
-        clearTheCart()
+    const handleProceedToShipping = () => {
+        history.push('/shipping');
+        // setCart([]);
+        // clearTheCart();
     };
 
     return (
@@ -33,7 +33,7 @@ const OrderReview = () => {
             <div className="cart-container">
                 <Cart cart={cart}>
                     <div className="text-center">
-                        <button onClick={handlePlaceOrder} className='btn btn-warning button'> Place Order </button>
+                        <button onClick={handleProceedToShipping} className='btn btn-warning button'> Proceed to Shipping </button>
                     </div>
                 </Cart></div>
         </div>

@@ -1,0 +1,12 @@
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
+    margin: 30px auto;
+    padding: 20px 0px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.form input{
+    margin-bottom: 16px;
+}

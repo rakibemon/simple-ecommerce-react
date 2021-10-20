@@ -14,7 +14,7 @@ const Login = () => {
     const handleSigninWithGoogle = () =>{
         googleSignIn()
         .then(userCredential=>{
-            history.push(redirect_uri)
+            history.push(redirect_uri) //direct history.push na diea then er kaj ki ?
         })
     }
     return (
